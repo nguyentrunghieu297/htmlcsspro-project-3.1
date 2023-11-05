@@ -31,12 +31,106 @@ button {
 }
 
 .container {
-    width: 1170px;
+    width: 1140px;
     max-width: calc(100% - 48px);
     margin: 0 auto;
 }
 
+.btn {
+    --height: 57px;
+    width: 173px;
+    text-align: center;
+    height: var(--height);
+    line-height: var(--height);
+    background-color: #143c3c;
+    border-radius: 40px;
+    border: 1.5px solid #143c3c;
+
+    color: #fff;
+    font-family: Public Sans;
+    font-size: 18px;
+    font-weight: 500;
+}
+
 /* ===== HEADER ===== */
+
+.header {
+    margin-top: 16px;
+}
+
+.navbar {
+    font-family: "Public Sans", sans-serif;
+    padding: 12px 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__logo {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    color: black;
+}
+
+.navbar__logo-name {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.navbar__menu-list {
+    display: flex;
+    align-items: center;
+    column-gap: 22px;
+}
+
+.navbar__menu-item {
+    padding: 8px 12px;
+    font-family: Public Sans;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.56;
+    color: #575d5e;
+}
+
+.navbar__menu-item:hover {
+    color: #152427;
+}
+
+.navbar__menu-item--active {
+    position: relative;
+    font-family: Public Sans;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.56;
+    color: #152427;
+}
+
+.navbar__menu-item--active::after {
+    position: absolute;
+    bottom: -32px;
+    display: block;
+    content: "";
+    width: 16px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.navbar__sign-up {
+    margin-left: auto;
+}
+
+.navbar__bottom-bar {
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        #fff 0%,
+        #dddcdc 51.09%,
+        rgba(212, 212, 212, 0) 99.68%
+    );
+}
 /* ===== OUR SERVICES ===== */
 /* ===== ABOUT US ===== */
 /* ===== OUR PROCESS ===== */
