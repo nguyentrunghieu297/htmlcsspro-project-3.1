@@ -679,7 +679,134 @@ button {
 }
 
 /* ===== OUR PROCESS ===== */
+
+.process {
+    margin-top: 29px;
+    padding: 36px 0;
+}
+
+.process__content-tag {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+
+.process__content-tag::before {
+    content: "";
+    width: 25px;
+    height: 1px;
+    background-color: #152427;
+}
+
+.process__content-heading {
+    position: relative;
+    --width: 42%;
+}
+
+.process__content-heading::after {
+    position: absolute;
+    bottom: 18px;
+    left: 420px;
+    display: inline-block;
+    content: "";
+    width: 66px;
+    height: 2px;
+    background-color: #152427;
+}
+
+.process-bottom {
+    margin-top: 81px;
+}
+
+.process__steps-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #83a17d;
+    /* border-radius: 33px; */
+    transition: 0.25s;
+}
+
+.process__steps-item:hover {
+    background: var(--scondery-color-light-green, #e2eddf);
+    border-bottom: 1px solid transparent;
+    border-radius: 33px;
+}
+
+.process__steps-item:hover .process__steps-item-title {
+    transform: translateX(10px);
+}
+
+.process__steps-item:hover .process__steps-more {
+    visibility: visible;
+}
+
+.process__steps-item:first-child {
+    position: relative;
+}
+
+.process__steps-item-title {
+    margin: 57px 30px;
+    display: flex;
+    transition: 0.25s;
+}
+
+.process__steps-title {
+    margin-left: 54px;
+}
+
+.process__steps-number {
+    min-width: 110px;
+    color: var(--primary-color-black-green, #143c3c);
+    font-size: 7.2rem;
+    font-weight: 600;
+    line-height: 55px; /* 72.222% */
+}
+
+.process__steps-heading {
+    margin-top: 15px;
+    color: var(--primary-color-black, #152427);
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.process__steps-more {
+    display: inline-block;
+    visibility: hidden;
+    text-decoration: underline;
+    margin-top: 22px;
+    color: var(--text-color-black-gray, #575d5e);
+    font-size: 1.8rem;
+    line-height: 18px; /* 100% */
+    transition: 0.05s;
+}
+
+.process__steps-item-img {
+    position: absolute;
+    bottom: 0;
+    right: 92px;
+    width: 450px;
+    height: 444px;
+    object-fit: cover;
+}
+
+.process__steps-item-title {
+    width: 46%;
+}
+
+.process__steps-item-info {
+}
+
+.process__steps-desc {
+    margin-right: 41px;
+    width: 572px;
+    color: var(--text-color-light-gray, #7d8188);
+    font-family: Public Sans;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56; /* 155.556% */
+}
 /* ===== PROJECT ===== */
+
 /* ===== FEATURES ===== */
 /* ===== BLOG & ARTICLES ===== */
 /* ===== FOOTER ===== */
