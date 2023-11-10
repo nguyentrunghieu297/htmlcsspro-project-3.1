@@ -517,6 +517,110 @@ button {
     margin-top: 13px;
 }
 
+.about__media-stats {
+    position: absolute;
+    background-color: #fff;
+    z-index: 99;
+    left: 457px;
+    top: 418px;
+    width: 144px;
+    border-radius: 8px;
+    box-shadow: 0px 7px 54px 0px rgba(154, 154, 154, 0.25);
+}
+
+.about__media-stats-info {
+    margin: 19px 23px 12px;
+}
+
+.about__media-stats-heading {
+    color: var(--primary-color-black, #152427);
+    font-family: Public Sans;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.about__media-stats-desc {
+    margin-top: 6px;
+    color: var(--text-color-black-gray, #575d5e);
+    font-family: Public Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4; /* 140% */
+}
+
+.about__media-stats-number {
+    margin-top: 10px;
+    color: var(--primary-color-black, #152427);
+    font-family: Public Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4; /* 140% */
+}
+
+.about__media-stats-percent1 {
+    margin-top: 3px;
+    width: 96px;
+    height: 2px;
+    border-radius: 10px;
+    background: #eaeaea;
+}
+
+.about__media-stats-percent2 {
+    width: 40px;
+    height: 2px;
+    border-radius: 10px;
+    background: #83a17d;
+}
+
+.about__media-stats-loading {
+    display: block;
+    text-align: right;
+    margin-top: 3px;
+    color: var(--primary-color-black, #152427);
+    font-family: Public Sans;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4; /* 140% */
+}
+
+.about__media-stats-dot {
+    margin-top: 3px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #143c3c;
+    border: 3px solid #eaeaea;
+}
+
+.about__media-stats-member {
+    margin-top: 5px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__media-stats-teams {
+    color: var(--primary-color-black, #152427);
+    font-family: Public Sans;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4; /* 140% */
+}
+
+.about__media-stats-avatar {
+    margin-left: -10px;
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 1px solid #fff;
+}
+
+.about__media-stats-avatar:first-child {
+    margin-left: 0;
+}
+
 .about__content {
     width: 43%;
 }
